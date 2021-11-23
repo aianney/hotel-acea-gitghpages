@@ -1,0 +1,35 @@
+.button-payment {
+  padding: 3px 60px 3px 60px;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+/* checkbox */
+.css-rvdsi9-MuiButtonBase-root-MuiCheckbox-root {
+  margin-top: -23px !important;
+}
+
+.css-j204z7-MuiFormControlLabel-root .MuiFormControlLabel-label {
+  margin-top: -23px !important;
+  color: #71c7b8;
+}
+
+@media screen and (device-width: 375px) and (device-height: 667px) {
+  /* credit details */
+  .css-vf70r1-MuiTypography-root {
+    font-size: 30px !important;
+    font-size: 13px !important;
+    margin-top: 20px !important;
+    margin-left: 30px !important;
+  }
+  .button-payment {
+    margin-left: 80px;
+  }
+  /* checkbox */
+  .css-rvdsi9-MuiButtonBase-root-MuiCheckbox-root {
+    margin-top: 8px !important;
+  }
+  .css-1d6wzja-MuiButton-startIcon > *:nth-of-type(1) {
+    font-size: 35px !important;
+  }
+}

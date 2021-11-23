@@ -1,0 +1,9 @@
+/* .payment {
+  margin-top: 20px;
+} */
+@media screen and (device-width: 375px) and (device-height: 667px) {
+  .css-72rsgb {
+    padding-right: 14px !important;
+    padding-left: 14px !important;
+  }
+}

@@ -1,25 +1,57 @@
-import logo from './logo.svg';
-import './App.css';
+import React, { useState, useMemo } from 'react'
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom'
+import {
+  AppContext,
+  NavBar,
+  ScrollTop,
+  Store,
+  Theme
+} from './components'
+import {
+  ContactUs,
+  Intro,
+  GuestDetails,
+  PageNotFound,
+  Payment,
+  RoomAmenities,
+  RoomSelection,
+} from './pages'
+import { Box, ThemeProvider, CssBaseline } from '@mui/material'
 
-function App() {
+const App = () => {
+  const [info, setInfo] = useState(Store),
+    value = useMemo(() => ({ info, setInfo }), [info, setInfo])
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <ThemeProvider theme={Theme}>
+      <Box pt={7.5}>
+        <Router>
+          <AppContext.Provider value={value}>
+            <NavBar />
+            <CssBaseline />
+            <ScrollTop />
+            <Switch>
+              <Route exact path="/" component={Intro} />
+              <Route exact path="/room-selection" component={RoomSelection} />
+              <Route
+                exact
+                path="/room-selection/:id"
+                component={RoomAmenities}
+              />
+              <Route exact path="/guest-details" component={GuestDetails} />
+              <Route
+                exact
+                path="/payments"
+                render={(props) => <Payment {...props} />}
+              />
+              <Route path="/contact-us" component={ContactUs} />
+              <Route component={PageNotFound} />
+            </Switch>
+          </AppContext.Provider>
+        </Router>
+      </Box>
+    </ThemeProvider>
+  )
 }
 
-export default App;
+export default App
