@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/hotel-acea-gitghpages/static/css/main.9e1645ad.chunk.css",
+    "main.js": "/hotel-acea-gitghpages/static/js/main.c6438f76.chunk.js",
+    "main.js.map": "/hotel-acea-gitghpages/static/js/main.c6438f76.chunk.js.map",
+    "runtime-main.js": "/hotel-acea-gitghpages/static/js/runtime-main.497750b5.js",
+    "runtime-main.js.map": "/hotel-acea-gitghpages/static/js/runtime-main.497750b5.js.map",
+    "static/js/2.d1ef46f3.chunk.js": "/hotel-acea-gitghpages/static/js/2.d1ef46f3.chunk.js",
+    "static/js/2.d1ef46f3.chunk.js.map": "/hotel-acea-gitghpages/static/js/2.d1ef46f3.chunk.js.map",
+    "index.html": "/hotel-acea-gitghpages/index.html",
+    "static/css/main.9e1645ad.chunk.css.map": "/hotel-acea-gitghpages/static/css/main.9e1645ad.chunk.css.map",
+    "static/js/2.d1ef46f3.chunk.js.LICENSE.txt": "/hotel-acea-gitghpages/static/js/2.d1ef46f3.chunk.js.LICENSE.txt",
+    "static/media/contact-us.ed906657.png": "/hotel-acea-gitghpages/static/media/contact-us.ed906657.png",
+    "static/media/deluxe-sea-view.4fe5b299.png": "/hotel-acea-gitghpages/static/media/deluxe-sea-view.4fe5b299.png",
+    "static/media/logo-wide.21cb478e.svg": "/hotel-acea-gitghpages/static/media/logo-wide.21cb478e.svg",
+    "static/media/logo.01e8dde8.svg": "/hotel-acea-gitghpages/static/media/logo.01e8dde8.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.497750b5.js",
+    "static/js/2.d1ef46f3.chunk.js",
+    "static/css/main.9e1645ad.chunk.css",
+    "static/js/main.c6438f76.chunk.js"
+  ]
+}
